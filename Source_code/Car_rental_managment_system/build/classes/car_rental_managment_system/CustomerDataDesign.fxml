@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_rental_managment_system.CustomerDataDesignController">
+   <children>
+      <AnchorPane fx:id="customerDataTable_mainForm" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="131.0" layoutY="164.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <top>
+                  <AnchorPane prefHeight="160.0" prefWidth="1100.0" stylesheets="@CustomerDataDesign.css" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="36.0" layoutY="-20.0" prefHeight="150.0" prefWidth="1099.0" stylesheets="@CustomerDataDesign.css" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="customerDataTable_closeBtn" layoutX="1017.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" prefHeight="26.0" prefWidth="57.0" styleClass="close" stylesheets="@CustomerDataDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="CLOSE" size="1.5em" wrappingWidth="17.142857313156128" />
+                                 </graphic>
+                              </Button>
+                              <Button layoutX="975.0" layoutY="15.0" mnemonicParsing="false" onAction="#minimize" prefHeight="26.0" prefWidth="57.0" styleClass="minimize" stylesheets="@CustomerDataDesign.css" AnchorPane.topAnchor="2.0">
+                                 <graphic>
+                                    <FontAwesomeIcon fx:id="customerDataTable_minimizeBtn" glyphName="MINUS" size="1.5em" wrappingWidth="17.142857313156128" />
+                                 </graphic>
+                              </Button>
+                              <FontAwesomeIcon fill="WHITE" glyphName="CAR" layoutX="61.0" layoutY="108.0" size="8em" />
+                              <Label layoutX="213.0" layoutY="65.0" text="Wellcome To All Customers Data Tabel" textFill="#f5f5f5">
+                                 <font>
+                                    <Font name="Arial Bold" size="28.0" />
+                                 </font>
+                              </Label>
+                              <FontAwesomeIcon fill="WHITE" glyphName="USERS" layoutX="821.0" layoutY="113.0" size="7em" />
+                           </children>
+                           <styleClass>
+                              <String fx:value="main" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                        </AnchorPane>
+                     </children>
+                     <styleClass>
+                        <String fx:value="semi-top-form" />
+                        <String fx:value="shadow" />
+                     </styleClass>
+                  </AnchorPane>
+               </top>
+               <right>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutY="106.0" prefHeight="440.0" prefWidth="201.0" stylesheets="@CustomerDataDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0" AnchorPane.topAnchor="0.0">
+                           <styleClass>
+                              <String fx:value="nav-form" />
+                              <String fx:value="shadow" />
+                           </styleClass>
+                           <children>
+                              <Button fx:id="customerDataTable_backBtn" layoutX="68.0" layoutY="390.0" mnemonicParsing="false" onAction="#backToHome" prefHeight="36.0" prefWidth="79.0" styleClass="back-btn" stylesheets="@CustomerDataDesign.css">
+                                 <graphic>
+                                    <FontAwesomeIcon glyphName="ARROW_LEFT" size="1.7em" />
+                                 </graphic>
+                                 <font>
+                                    <Font name="System Bold" size="15.0" />
+                                 </font>
+                              </Button>
+                              <ImageView fitHeight="378.0" fitWidth="200.0" layoutX="1.0" layoutY="1.0" pickOnBounds="true">
+                                 <image>
+                                    <Image url="@../image/back/Dark%20Bronze%20Auto%20Repair%20Service%20Instagram%20Post.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </right>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="135.0" layoutY="14.0" prefHeight="440.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane layoutX="10.0" layoutY="8.0" prefHeight="417.0" prefWidth="881.0" stylesheets="@CustomerDataDesign.css">
+                                 <children>
+                                    <TableView fx:id="customerDataTable_tableView" layoutX="7.0" layoutY="48.0" prefHeight="362.0" prefWidth="868.0" stylesheets="@CustomerDataDesign.css">
+                                      <columns>
+                                        <TableColumn fx:id="customerDataTable_col_cust_id" prefWidth="56.00000190734863" text="cust_id" />
+                                        <TableColumn fx:id="customerDataTable_col_firstName" prefWidth="113.99999237060547" text="firstName" />
+                                          <TableColumn fx:id="customerDataTable_col_lastName" prefWidth="111.99996948242188" text="lastName" />
+                                          <TableColumn fx:id="customerDataTable_gender" prefWidth="77.0" text="gender" />
+                                          <TableColumn fx:id="customerDataTable_col_car_id" prefWidth="50.0" text="car_id" />
+                                          <TableColumn fx:id="customerDataTable_col_brand" prefWidth="74.99996948242188" text="brand" />
+                                          <TableColumn fx:id="customerDataTable_col_model" prefWidth="82.00003051757812" text="model" />
+                                          <TableColumn fx:id="customerDataTable_col_total" prefWidth="90.0" text="total(ETB)" />
+                                          <TableColumn fx:id="customerDataTable_col_date_rented" prefWidth="108.0" text="date_rented" />
+                                          <TableColumn fx:id="customerDataTable_col_date_return" prefWidth="105.0" text="date_return" />
+                                      </columns>
+                                    </TableView>
+                                    <TextField fx:id="customerDataTable_search" alignment="CENTER" layoutX="14.0" layoutY="7.0" onAction="#customerDataSearch" prefHeight="34.0" prefWidth="293.0" promptText="search by customer_id,brand and car_id" styleClass="search" stylesheets="@CustomerDataDesign.css" />
+                                    <FontAwesomeIcon fill="#d0c8c8" glyphName="SEARCH" layoutX="22.0" layoutY="28.0" size="1.5em" />
+                                 </children>
+                                 <styleClass>
+                                    <String fx:value="white-back" />
+                                    <String fx:value="shadow" />
+                                 </styleClass>
+                              </AnchorPane>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on :  June 06, 2024, 2:34:22 PM
+    Author     : abreh
+*/
+
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px .2px .4px;
+}
+.semi-top-form{
+    -fx-background-color:#efefef;
+    -fx-border-color:#000;
+    -fx-border-width:.2px .4px .4px .4px;
+}
+.close{
+        -fx-background-color: transparent;
+        -fx-cursor:hand;
+    }
+.close:hover{
+        -fx-background-color:#ee1906;
+    }
+.minimize{
+        -fx-background-color:transparent;
+        -fx-cursor:hand;
+    }
+.minimize:hover{
+        -fx-background-color:#ddd;
+    }
+.Main-FORM{
+        -fx-background-color:black;
+        -fx-text-fill:gold;
+        -fx-font-size:14px;
+        -fx-font-family:"Arial";
+        
+    }
+.textfeild{
+        -fx-border-color:gold;
+        -fx-background-radius:3px;
+        -fx-border-color:gold;
+        -fx-border-radius:5px;
+        -fx-border-width:3px;
+        }
+.textfeild:focused{
+    -fx-background-color:#fff;
+    -fx-border-width:1.5px;
+    
+      }
+.AddAdmin-btn{
+        -fx-background-color:green;
+        -fx-background-radius:4px;
+        -fx-cursor:hand;
+        -fx-font-size:14px; 
+        -fx-font-family:"Arial";
+        -fx-text-fill:#fff;
+      }
+.AddAdmin-btn:hover{
+          -fx-background-color:linear-gradient(to bottom,#e8a2a2, #115aae);
+      }
+.delete-btn{
+        -fx-background-color:#eb0202;
+        -fx-background-radius:4px;
+        -fx-cursor:hand;
+        -fx-font-size:14px; 
+        -fx-font-family:"Arial";
+        -fx-text-fill:#fff;
+      }
+.delete-btn:hover{
+          -fx-background-color:linear-gradient(to bottom,#e8a2a2, #eb0202);
+      }  
+.back{
+        -fx-background-color:#df2582;
+        -fx-background-radius:4px;
+        -fx-cursor:hand;
+        -fx-font-size:14px; 
+        -fx-font-family:"Arial";
+        -fx-text-fill:#fff;
+      }
+.back:hover{
+          -fx-background-color:linear-gradient(to bottom,#7498c0, #df2582);
+      }

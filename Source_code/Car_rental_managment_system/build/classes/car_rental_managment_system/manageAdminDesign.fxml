@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_rental_managment_system.manageAdminDesignController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="500.0" prefWidth="700.0" styleClass="Main-FORM" stylesheets="@manageAdminDesign.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <FontAwesomeIcon fill="#ffc500" glyphName="USER_PLUS" layoutX="195.0" layoutY="131.0" size="7em" />
+                  <TextField fx:id="addAdminTextField" layoutX="154.0" layoutY="215.0" prefHeight="35.0" prefWidth="190.0" promptText="Enter username" styleClass="textfeild" stylesheets="@manageAdminDesign.css" />
+                  <PasswordField fx:id="addAdminPasswordField" layoutX="154.0" layoutY="270.0" prefHeight="35.0" prefWidth="190.0" promptText="Enter password" styleClass="textfeild" stylesheets="@manageAdminDesign.css" />
+                  <PasswordField fx:id="addAdmincoPasswordField" layoutX="154.0" layoutY="318.0" prefHeight="35.0" prefWidth="190.0" promptText="conifirm password" styleClass="textfeild" stylesheets="@manageAdminDesign.css" />
+                  <Button fx:id="addAdminbtn" layoutX="153.0" layoutY="370.0" mnemonicParsing="false" onAction="#AddAdmin" prefHeight="32.0" prefWidth="190.0" styleClass="AddAdmin-btn" stylesheets="@manageAdminDesign.css" text="Add Admin" />
+                  <Label layoutX="74.0" layoutY="222.0" text="Username" textFill="#ffc500">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="74.0" layoutY="274.0" text="password" textFill="#ffc500">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="328.0" text="conifirm password" textFill="#ffc500">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="bakbtn" layoutX="37.0" layoutY="436.0" mnemonicParsing="false" onAction="#back" prefHeight="33.0" prefWidth="82.0" styleClass="back" stylesheets="@manageAdminDesign.css">
+                     <graphic>
+                        <FontAwesomeIcon glyphName="ARROW_LEFT" size="1.6em" />
+                     </graphic></Button>
+                  <TextField fx:id="deleteAdminIDTextField" layoutX="456.0" layoutY="215.0" prefHeight="35.0" prefWidth="190.0" promptText="Enter admin id to Delete" styleClass="textfeild" stylesheets="@manageAdminDesign.css" />
+                  <Button fx:id="deletAdminbtn" layoutX="456.0" layoutY="264.0" mnemonicParsing="false" onAction="#DeleteAdmin" prefHeight="32.0" prefWidth="190.0" styleClass="delete-btn" stylesheets="@manageAdminDesign.css" text="Delete Admin" />
+                  <Label layoutX="430.0" layoutY="225.0" text="id" textFill="#ffc500">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane layoutY="8.0" prefHeight="35.0" prefWidth="700.0" styleClass="semi-top-form" stylesheets="@manageAdminDesign.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button fx:id="closebtn" layoutX="647.0" layoutY="4.0" mnemonicParsing="false" onAction="#close" prefHeight="26.0" prefWidth="43.0" styleClass="close" stylesheets="@manageAdminDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="CLOSE" size="1.5em" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="minimizebtn" layoutX="603.0" layoutY="2.0" mnemonicParsing="false" onAction="#minimize" prefHeight="26.0" prefWidth="43.0" styleClass="minimize" stylesheets="@manageAdminDesign.css" AnchorPane.topAnchor="2.0">
+                           <graphic>
+                              <FontAwesomeIcon glyphName="MINUS" size="1.5em" />
+                           </graphic>
+                        </Button>
+                        <FontAwesomeIcon fill="#550aff" glyphName="CAR" layoutX="20.0" layoutY="25.0" size="1.8em" />
+                        <Label layoutX="59.0" layoutY="5.0" text="car rental managment system" textFill="#0035ff">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <Label layoutX="156.0" layoutY="165.0" text="Add Admin Here!" textFill="#ffc500">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="433.0" layoutY="165.0" text="Delete Admin Here!" textFill="#ffc500">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

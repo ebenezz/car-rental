@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_rental_managment_system.userLoginDesignController">
+   <children>
+      <AnchorPane fx:id="userLoginForm" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="500.0" fitWidth="651.0" opacity="0.98" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/back/Dark%20Bronze%20Auto%20Repair%20Service%20Instagram%20Post.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="userLoginClose" layoutX="586.0" layoutY="14.0" mnemonicParsing="false" onAction="#close" prefHeight="21.0" prefWidth="41.0" styleClass="close" stylesheets="@userLoginDesign.css" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="2.0">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="CLOSE" size="1.6em" wrappingWidth="14.085715293884277" />
+               </graphic>
+            </Button>
+            <Button fx:id="userLoginMinimize" layoutX="562.0" layoutY="2.0" mnemonicParsing="false" onAction="#minimize" prefHeight="21.0" prefWidth="41.0" styleClass="minimize" stylesheets="@userLoginDesign.css" AnchorPane.topAnchor="2.0">
+               <graphic>
+                  <FontAwesomeIcon fill="WHITE" glyphName="MINUS" size="1.6em" wrappingWidth="14.085715293884277" />
+               </graphic>
+            </Button>
+            <TextField fx:id="userLoginTextField" layoutX="222.0" layoutY="215.0" onAction="#LoginUser" prefHeight="35.0" prefWidth="180.0" promptText="Enter username" styleClass="textfeild" stylesheets="@userLoginDesign.css" />
+            <PasswordField fx:id="userLoginPasswordFeild" layoutX="222.0" layoutY="272.0" onAction="#LoginUser" prefHeight="35.0" prefWidth="180.0" promptText="Enter your password" styleClass="textfeild" stylesheets="@userLoginDesign.css" />
+            <Label layoutX="413.0" layoutY="219.0" text="username" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="414.0" layoutY="276.0" text="password" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="#22b7e0" glyphName="USER" layoutX="194.0" layoutY="242.0" size="2.3em" />
+            <FontAwesomeIcon fill="#c20666" glyphName="KEY" layoutX="194.0" layoutY="299.0" size="2.3em" />
+            <FontAwesomeIcon fill="#00f5ec" glyphName="USER" layoutX="255.0" layoutY="155.0" size="9em" />
+            <Label layoutX="254.0" layoutY="167.0" text="Sign in" textFill="#ff6105">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="188.0" layoutY="25.0" prefHeight="45.0" prefWidth="452.0" text="Car Rental Managment System" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="26.0" />
+               </font>
+            </Label>
+            <FontAwesomeIcon fill="WHITE" glyphName="CAR" layoutX="191.0" layoutY="105.0" size="2em" text="" />
+            <Button fx:id="userLoginbtn" layoutX="222.0" layoutY="363.0" mnemonicParsing="false" onAction="#LoginUser" prefHeight="38.0" prefWidth="180.0" styleClass="login-btn" stylesheets="@userLoginDesign.css" text="Log In">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="BackbtnToRegister" layoutX="24.0" layoutY="436.0" mnemonicParsing="false" onAction="#GoTowellcomePage" prefHeight="40.0" prefWidth="78.0" styleClass="login-btn" stylesheets="@userLoginDesign.css">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="ARROW_LEFT" size="1.6em" />
+               </graphic>
+            </Button>
+            <Button fx:id="userForgotbtn" layoutX="383.0" layoutY="320.0" mnemonicParsing="false" onAction="#GoToForgotPassword" prefHeight="21.0" prefWidth="144.0" styleClass="forgot" stylesheets="@userLoginDesign.css" text="forgot Password?" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="checkBoxShowPassword" layoutX="231.0" layoutY="314.0" mnemonicParsing="false" onAction="#handelShowPw" text="Show password" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="GoToAboutUs" layoutX="531.0" layoutY="436.0" mnemonicParsing="false" onAction="#GoToAboutUs" prefHeight="38.0" prefWidth="85.0" styleClass="login-btn" stylesheets="@userLoginDesign.css" text="About Us">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="showPassword" layoutX="222.0" layoutY="272.0" prefHeight="35.0" prefWidth="180.0" promptText="Enter your password" styleClass="textfeild" stylesheets="@userLoginDesign.css" visible="false" />
+            <Button fx:id="registerBack" layoutX="221.0" layoutY="416.0" mnemonicParsing="false" onAction="#GoToRegister" prefHeight="35.0" prefWidth="180.0" styleClass="login-btn" stylesheets="@userLoginDesign.css" text="Sign Up">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIcon glyphName="SIGN_IN" size="1.6em" />
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

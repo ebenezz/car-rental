@@ -1,0 +1,53 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on :  June 10, 2024, 1:12:03 PM
+    Author     : abenezer
+*/
+
+.close{
+        -fx-background-color: transparent;
+        -fx-cursor:hand;
+    }
+.close:hover{
+        -fx-background-color:#ee1906;
+    }
+.minimize{
+        -fx-background-color:transparent;
+        -fx-cursor:hand;
+    }
+.minimize:hover{
+        -fx-background-color:#ddd;
+    }
+.login-btn{
+        -fx-background-color:#e56705;
+        -fx-background-radius:20px;
+        -fx-cursor:hand;
+    }
+.login-btn:hover{
+        -fx-background-color:#fff6b2;
+    }
+.textfeild{
+    -fx-border-color:#e56705;
+    -fx-background-radius:4px;
+    
+    -fx-border-radius:4px;
+    -fx-border-width:4px;
+
+}
+.textfeild:focused{
+    -fx-background-color:#fff;
+    -fx-border-color:#e56705;
+    -fx-border-width:1.1px;
+    -fx-font-size:14px;
+}
+.forgot{
+        -fx-background-color:#ff0000;
+        -fx-cursor:hand;
+    }
+.forgot:hover{
+        -fx-background-color:#eb9216;
+    }

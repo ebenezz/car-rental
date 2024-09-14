@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="car_rental_managment_system.aboutUsDesignController">
+   <children>
+      <AnchorPane fx:id="main_form" prefHeight="200.0" prefWidth="200.0" styleClass="main" stylesheets="@aboutUsDesign.css">
+         <children>
+            <TextArea editable="false" layoutX="213.0" layoutY="8.0" prefHeight="431.0" prefWidth="429.0" text="ABOUT USWELCOME USER!This is a Car Rental Rental Company provides an online car rent fo users easly.you can easily registered and rent cars for a day you want to rent.to use this application users should register and then login to see availabel cars,and you can rent by fullfiling all the blank spaces.when you fill the day you rent and the returned datethe system calculates the total amount automatically.you can rent by pay the total amount required by the system." wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </TextArea>
+            <ImageView fitHeight="450.0" fitWidth="214.0" layoutY="-2.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../image/back/Beige%20Red%20Simple%20Need%20A%20Car%20Your%20Story.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="13.0" layoutY="14.0" text="Car Rental Managment System" textFill="#68270d">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <Button fx:id="aboutBack" layoutX="14.0" layoutY="406.0" mnemonicParsing="false" onAction="#aboutBack" prefHeight="30.0" prefWidth="71.0" styleClass="back-btn" stylesheets="@aboutUsDesign.css">
+               <graphic>
+                  <FontAwesomeIcon glyphName="ARROW_LEFT" size="1.4em" />
+               </graphic>
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="13.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/fb.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="13.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/insta%20(2).jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="34.0" layoutX="13.0" layoutY="327.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/twitt.jpg" />
+               </image>
+            </ImageView>
+            <Hyperlink fx:id="facebook" layoutX="46.0" layoutY="242.0" onAction="#openlink" text="www.facebook.com">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="instagram" layoutX="46.0" layoutY="288.0" onAction="#openlinkinstagram" text="www.Instagram.com">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+            <Hyperlink fx:id="twitter" layoutX="46.0" layoutY="330.0" onAction="#openlinktwitter" text="www.Twitter.com">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Hyperlink>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

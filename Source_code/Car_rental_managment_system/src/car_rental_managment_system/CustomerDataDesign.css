@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on :  May 24, 2024, 11:01:18 PM
+    Author     : abenezer
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 1, 2023, 10:35:08 AM
+    Author     : abreh
+*/
+
+.top-form{
+    -fx-background-color:#fff;
+    -fx-border-color:#000;
+    -fx-border-width:.4px .4px .2px .4px;
+}
+.semi-top-form{
+    -fx-background-color:#efefef;
+    -fx-border-color:#000;
+    -fx-border-width:.2px .4px .4px .4px;
+}
+.close{
+        -fx-background-color: transparent;
+        -fx-cursor:hand;
+    }
+.close:hover{
+        -fx-background-color:#ee1906;
+    }
+.minimize{
+        -fx-background-color:transparent;
+        -fx-cursor:hand;
+    }
+.minimize:hover{
+        -fx-background-color:#ddd;
+    }
+.nav-form{
+        -fx-background-color:#000000;
+    }
+    
+.nav-btn{
+        -fx-background-color:transparent;
+        -fx-text-fill:#fff;
+        -fx-font-size:14px;
+        -fx-font-family:"Arial";
+        -fx-cursor:hand;
+        -fx-alignment:center-left;
+    }
+.shadow{
+        -fx-effect:dropshadow(three-pass-box,rgba(0,0,0,0.5), 6,0,0,0);
+    }
+.white-back{
+        -fx-background-color:#fff;
+        -fx-background-radius:8px;
+    }
+.main{
+        -fx-background-color:#864d4d;
+    }
+
+.search{
+          -fx-background-color:#fff;
+          -fx-border-color:linear-gradient(to top right, #444750, #696d72);
+          -fx-border-width:1px;
+          -fx-font-size:13px;
+          -fx-padding:0px 0px 0px 28px;
+          -fx-border-radius:8px;
+          
+        }
+.search:focused{
+          -fx-border-width:2px;
+      }
+.table-view{
+          -fx-background-color:transparent;
+          -fx-border-color:#864d4d;
+          -fx-border-width:2px;
+          -fx-border-radius:8px;
+          -fx-padding:0px;
+        }
+.table-view .tabel-column{
+          -fx-alignment: CENTER;
+        }
+.table-view .column-header-background{
+          -fx-background-color:#864d4d;
+          -fx-border-radius:8px 8px 0px 0px;
+          -fx-background-insets:0 0 0 0;
+          
+        }
+.table-view .column-header, .filter{
+          -fx-background-color:transparent;
+          -fx-size:40px;
+        }
+.table-view .column-header, .label{
+          -fx-text-fill:#000;
+          -fx-font-family:"Arial";
+        }
+.back-btn{
+        -fx-background-color:#e56705;
+        -fx-background-radius:20px;
+        -fx-cursor:hand;
+    }
+.back-btn:hover{
+        -fx-background-color:#fff6b2;
+    }
